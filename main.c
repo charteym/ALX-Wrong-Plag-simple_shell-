@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * main - main entry point
- * @ac: arg count 1
- * @av: arg vector 2
- * Return: return 0 on success, return 1 on error
+ * main - thiss is the main entry point
+ * @ac: arg count
+ * @av: arg vector
+ * Return: return 0 on success, and return 1 on error
  */
 int main(int ac, char **av)
 {
