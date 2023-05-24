@@ -1,10 +1,10 @@
-#include "shell.h"
+#include "main.h"
 
 /**
- * main - this is the main entry point
- * @ac: this is the arg count
- * @av: arg vector
- * Return: 0 on success, 1 on error
+ * main - main entry point
+ * @ac: arg count 1
+ * @av: arg vector 2
+ * Return: return 0 on success, return 1 on error
  */
 int main(int ac, char **av)
 {
@@ -12,9 +12,9 @@ int main(int ac, char **av)
 	int fd = 2;
 
 	asm ("mov %1, %0\n\t"
-			"add $3, %0"
-			: "=r" (fd)
-			: "r" (fd));
+		"add $3, %0"
+		: "=r" (fd)
+		: "r" (fd));
 
 	if (ac == 2)
 	{
@@ -41,4 +41,3 @@ int main(int ac, char **av)
 	hsh(info, av);
 	return (EXIT_SUCCESS);
 }
-
